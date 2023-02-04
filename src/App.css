@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+#root {
+  height: 100%;
+}
+
+h3 {
+  margin: 0;
+}
+
+.section {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #61dafb;
+}
+
+.sorted-container,
+.unsorted-container {
+  background: #fff;
+  border-radius: 0.2rem;
+  box-shadow: 0.1rem 0.1rem 0.3rem black;
+  width: 80%;
+  height: 10rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.list-container {
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  height: 6rem;
+  max-height: 8rem;
+  margin: 1rem 0;
+}
+
+.list-item {
+  margin-inline: 0.5rem;
+  background: rgb(255, 191, 0);
+  height: 1rem;
+  width: 0.5rem;
+  padding-inline: 1rem;
+}
